@@ -649,6 +649,12 @@ body {
     background-attachment: fixed;
     overflow: hidden;
     max-width: 100%;
-    min-height: 100dvh;
+    min-height: 150dvh;
+  }
+    .swip {
+    display: none;
+  }
+  .ex {
+    display: none;
   }
 }
