@@ -388,7 +388,7 @@ body {
   top: 150px;
 }
 .cover-main {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: 
     url(realback.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -642,14 +642,14 @@ body {
     align-items: center;
   }
    .cover-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    background:
       url(realback.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
     max-width: 100%;
-    min-height: 150dvh;
+    min-height: 130dvh;
   }
     .swip {
     display: none;
