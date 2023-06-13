@@ -413,7 +413,7 @@ body {
   text-transform: uppercase;
   font-size: 45px;
   color: var(--color-primary-darker);
-  font-weight: bold;
+  font-weight: 500px;
 }
 .about-main p {
   display: flex;
@@ -424,14 +424,13 @@ body {
 }
 .about-main-1 img {
   transform: scalex(-1);
-  line-height: 1.35;
-  font-size: 1.1rem;
   font-family: "Overlock SC", cursive;
-  font-weight: bold;
+  position: relative;
+  bottom: 100px;
 }
 .about-main-0 img {
   position: relative;
-  top: 250px;
+  top: 200px;
 }
 .swip {
   position: relative;
@@ -641,5 +640,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+   .cover-main {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(realback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100dvh;
   }
 }
