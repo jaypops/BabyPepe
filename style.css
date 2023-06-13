@@ -649,7 +649,7 @@ body {
     background-attachment: fixed;
     overflow: hidden;
     max-width: 100%;
-    min-height: 130dvh;
+    min-height: 120dvh;
   }
     .swip {
     display: none;
