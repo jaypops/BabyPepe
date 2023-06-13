@@ -100,8 +100,7 @@ body {
   padding: 0.5rem 2rem;
   border-radius: 3rem;
   background-color: var(--color-primary);
-  color: #222;
-  font-size: 18px;
+  color: var(--color-primary-darker);
   transition: transform 1000ms;
 }
 .nav__link--btn:hover,
@@ -388,8 +387,7 @@ body {
   top: 150px;
 }
 .cover-main {
-  background: 
-    url(realback.png);
+  background: url(realback.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -405,7 +403,7 @@ body {
 }
 .about-main {
   position: relative;
-  top: 150px;
+  top: 130px;
 }
 .about-main h3 {
   display: flex;
@@ -525,16 +523,8 @@ body {
     font-size: 18px;
   }
   .rap {
-    display: flex;
+    display: inline-block;
     justify-content: center;
-  }
-  .rap-links {
-    display: block;
-  }
-  .btn-links {
-    color: var(--color-primary);
-    font-size: 20px;
-    padding: 7px;
   }
   .dropdown-menu {
     background: url(pepe.jpg);
@@ -585,7 +575,7 @@ body {
     padding: 20px;
   }
   .main__ h1 {
-    font-size: 90px;
+    font-size: 65px;
   }
   .main__ p {
     position: relative;
@@ -599,7 +589,7 @@ body {
     font-size: 18px;
     padding: 0.6rem 3.1rem;
   }
-  .btn-link {
+  .nav__link .btn-link {
     font-size: 25px;
     position: relative;
     bottom: 10px;
@@ -629,6 +619,9 @@ body {
   .hidden-2 {
     display: none;
   }
+  .nav__link {
+    font-size: 0.8rem;
+  }
   .exit {
     position: absolute;
     left: 25rem;
@@ -641,17 +634,22 @@ body {
     justify-content: center;
     align-items: center;
   }
-   .cover-main {
-    background:
-      url(realback.png);
+  .foot-p p {
+    font-size: 10px;
+  }
+  .foot-link a {
+    font-size: 14px;
+  }
+  .cover-main {
+    background: url(realback.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     overflow: hidden;
     max-width: 100%;
-    min-height: 120dvh;
+    min-height: 170dvh;
   }
-    .swip {
+  .swip {
     display: none;
   }
   .ex {
