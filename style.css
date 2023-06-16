@@ -453,8 +453,8 @@ body {
 }
 .foot {
   background-color: var(--color-primary);
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -611,6 +611,9 @@ body {
   .main-mint-page h1 {
     font-size: 30px;
   }
+   .mini-main-body {
+    min-height: 80dvh;
+  }
   .about-text {
     display: flex;
     justify-content: center;
@@ -681,7 +684,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 2px;
+    padding: 0 0;
     background: hsl(0 0% 0% / 0.75);
   }
   .swiper {
@@ -699,5 +702,12 @@ body {
   }
   .exit {
     right: 40px;
+  }
+    .foot {
+    min-height: 7dvh;
+  }
+  .foot-text {
+    position: relative;
+    top: 15px;
   }
 }
