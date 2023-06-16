@@ -118,9 +118,8 @@ body {
 .mobile-nav-2 {
   display: none;
 }
-/* .main-body-1 {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(pepe.jpg);
+.main-body-1 {
+  background: url(realback.png);
   max-width: 100%;
   min-height: 100dvh;
   background-repeat: no-repeat;
@@ -128,7 +127,7 @@ body {
   background-attachment: fixed;
   overflow: hidden;
   z-index: 1;
-} */
+}
 .mainn {
   display: flex;
   justify-content: space-evenly;
@@ -197,6 +196,7 @@ body {
 }
 .btn-btn {
   transition: transform 1000ms;
+  filter: drop-shadow(30px 30px 40px #111);
 }
 .btn-btn:hover,
 .btn-btn:focus-visible {
@@ -232,7 +232,7 @@ body {
 }
 .wallet h3 {
   color: var(--color-tertiary);
-  font-family: "Overlock SC", cursive;
+  font-family: "Tilt Prism", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -293,7 +293,7 @@ body {
   font-weight: bold;
 }
 .main-mint-page h1 {
-  font-family: "Overlock SC", cursive;
+  font-family: "Tilt Prism", cursive;
   font-size: 50px;
   text-transform: uppercase;
   font-weight: bold;
@@ -366,44 +366,30 @@ body {
   align-items: center;
 }
 .but {
+  width: 30px;
   padding: 0;
   border: none;
   font: inherit;
   color: inherit;
   background: none;
 }
-/* .mini-main-body {
+.mini-main-body {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(pepe-2.jpg);
+    url(realback.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
   max-width: 100%;
   min-height: 100dvh;
-} */
-.mini-main-body {
-  position: relative;
-  top: 150px;
-}
-.cover-main {
-  background: url(realback.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-  max-width: 100%;
-  min-height: 180dvh;
 }
 .about-text {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-.about-main {
   position: relative;
-  top: 130px;
+  top: 50px;
 }
 .about-main h3 {
   display: flex;
@@ -412,6 +398,7 @@ body {
   font-size: 45px;
   color: var(--color-primary-darker);
   font-weight: 500px;
+  font-family: "Tilt Prism", cursive;
 }
 .about-main p {
   display: flex;
@@ -422,7 +409,6 @@ body {
 }
 .about-main-1 img {
   transform: scalex(-1);
-  font-family: "Overlock SC", cursive;
   position: relative;
   bottom: 100px;
 }
@@ -449,15 +435,21 @@ body {
   flex-direction: column;
   justify-content: center;
   width: 350px;
-  height: 450px;
+  height: 100px;
 }
 .swiper-slide img {
   display: block;
   width: 400px;
   height: 500px;
+  border-radius: 20px;
 }
-.swiper-button-next {
-  display: none;
+.mySwiper h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 45px;
+  font-family: "Tilt Prism", cursive;
 }
 .foot {
   background-color: var(--color-primary);
@@ -465,6 +457,7 @@ body {
   border-top-right-radius: 30px;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   min-height: 10dvh;
   max-width: 100%;
 }
@@ -484,6 +477,9 @@ body {
 }
 .foot-link-1:hover {
   color: var(--color-secondary);
+}
+.swip-2 {
+  display: none;
 }
 @media screen and (min-width: 300px) and (max-width: 900px) {
   .nav {
@@ -526,6 +522,7 @@ body {
     display: inline-block;
     justify-content: center;
   }
+
   .dropdown-menu {
     background: url(pepe.jpg);
     background-position: center;
@@ -544,6 +541,13 @@ body {
     padding: 0.7rem;
     position: relative;
     top: 60px;
+  }
+  .btn-link {
+    font-size: 21px;
+  }
+  .btn-d {
+    position: relative;
+    bottom: 20px;
   }
   .mobile-nav-2 {
     display: block;
@@ -571,8 +575,8 @@ body {
   }
   .mainn {
     position: relative;
-    top: 0;
-    padding: 20px;
+    top: -80px;
+    padding: 10px;
   }
   .main__ h1 {
     font-size: 65px;
@@ -585,14 +589,9 @@ body {
   .btn:link,
   .btn:visited {
     position: relative;
-    top: 30px;
+    top: 20px;
     font-size: 18px;
     padding: 0.6rem 3.1rem;
-  }
-  .nav__link .btn-link {
-    font-size: 25px;
-    position: relative;
-    bottom: 10px;
   }
   .about-main-0 img,
   .about-main-1 img {
@@ -604,6 +603,10 @@ body {
   .mint-main-layout {
     display: block;
     justify-content: center;
+    align-items: center;
+  }
+  .main-mint-page {
+    padding-left: 20px;
   }
   .main-mint-page h1 {
     font-size: 30px;
@@ -612,9 +615,12 @@ body {
     display: none;
   }
   .time {
-    padding: 15px;
+    padding: 10px;
     position: relative;
     right: 17px;
+  }
+  .time-text h2 {
+    font-size: 20px;
   }
   .hidden-2 {
     display: none;
@@ -649,10 +655,44 @@ body {
     max-width: 100%;
     min-height: 170dvh;
   }
-  .swip {
-    display: none;
+  .main-body-1 {
+    background: url(realback.png);
+    max-width: 100%;
+    min-height: 80dvh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    z-index: 1;
   }
-  .ex {
-    display: none;
+  .wallet h3 {
+    font-size: 18px;
+  }
+  .wallets {
+    width: 250px;
+    height: 150px;
+  }
+  .swip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2px;
+    background: hsl(0 0% 0% / 0.75);
+  }
+  .swiper {
+    width: 100%;
+  }
+  .swiper-slide {
+    width: 350px;
+    height: 450px;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .exit {
+    right: 40px;
   }
 }

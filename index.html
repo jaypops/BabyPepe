@@ -9,13 +9,14 @@
     <link rel="icon" type="image/x-icon" href="babypepelogo.png" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100&family=Bungee+Shade&family=Heebo:wght@200&family=Nothing+You+Could+Do&family=Overlock+SC&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script defer src="script.js"></script>
@@ -35,7 +36,7 @@
               </div>
                 <ul class="nav--links">
                   <li class="nav--item  nav_2">
-                    <a class="nav__link under" href="#"><i class="fa fa-thin fa-house"></i> Home</a>
+                    <a class="nav__link under" href="#main-"><i class="fa fa-thin fa-house"></i> Home</a>
                   </li>
                   <li class="nav--item nav_2">
                     <a class="nav__link under" href="#sec-about"><i class="fa fa-thin fa-address-card"></i> About</a>
@@ -71,19 +72,19 @@
               <p class="mint-ends">public mint end in</p>
               <div class="launch-time">
                 <div class="time">
-                  <h2>00</h2>
+                  <h2 class="time-text">00</h2>
                   <span>Days</span>
                 </div>
                 <div class="time">
-                  <h2>00</h2>
+                  <h2 class="time-text">00</h2>
                   <span>Hours</span>
                 </div>
                 <div class="time">
-                  <h2>00</h2>
+                  <h2 class="time-text">00</h2>
                   <span>Minutes</span>
                 </div>
                 <div class="time">
-                  <h2>00</h2>
+                  <h2 class="time-text">00</h2>
                   <span>Seconds</span>
                 </div>
               </div>
@@ -122,7 +123,7 @@
         </div>
       </section>
       <main class="cover-main">
-        <section class="main-body-1">
+        <section class="main-body-1" id="main-">
           <div class="mainn animate__animated animate__backInLeft">
               <div class="main__">
                 <h1>Baby<span>Pepe</span></h1>
@@ -161,6 +162,7 @@
         </section>
         <main class="swip" id="swipp">
           <div class="swiper mySwiper">
+            <h1>Collections</h1>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="baby-1.jpeg" />
