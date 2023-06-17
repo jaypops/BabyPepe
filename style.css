@@ -388,8 +388,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 50px;
+  padding-top:30px;
 }
 .about-main h3 {
   display: flex;
