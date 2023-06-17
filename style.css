@@ -521,7 +521,6 @@ body {
     display: inline-block;
     justify-content: center;
   }
-
   .dropdown-menu {
     background: url(pepe.jpg);
     background-position: center;
@@ -611,6 +610,13 @@ body {
     font-size: 30px;
   }
    .mini-main-body {
+       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(realback.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  max-width: 100%;
     min-height: 80dvh;
   }
   .about-text {
