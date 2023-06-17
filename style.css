@@ -388,7 +388,8 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-top:30px;
+  position: relative;
+  top: 50px;
 }
 .about-main h3 {
   display: flex;
@@ -426,6 +427,8 @@ body {
 }
 .swiper {
   width: 100%;
+  position: relative;
+  bottom: 50px;
 }
 .swiper-slide {
   background-position: center;
@@ -438,8 +441,8 @@ body {
 }
 .swiper-slide img {
   display: block;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 450px;
   border-radius: 20px;
 }
 .mySwiper h1 {
@@ -452,9 +455,9 @@ body {
 }
 .foot {
   background-color: var(--color-primary);
+  background-position: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  background-position: center;
   background-size: cover;
   background-attachment: fixed;
   min-height: 10dvh;
@@ -480,7 +483,7 @@ body {
 .swip-2 {
   display: none;
 }
-@media screen and (min-width: 300px) and (max-width: 900px) {
+@media screen and (min-width: 320px) and (max-width: 550px) {
   .nav {
     padding: 1rem 0.5rem;
   }
@@ -591,12 +594,20 @@ body {
     font-size: 18px;
     padding: 0.6rem 3.1rem;
   }
+  .mini-main-body {
+    min-height: 80dvh;
+  }
   .about-main-0 img,
   .about-main-1 img {
     display: none;
   }
   .about-main p {
     padding: 0 20px;
+  }
+  .about-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
   .mint-main-layout {
     display: block;
@@ -608,21 +619,6 @@ body {
   }
   .main-mint-page h1 {
     font-size: 30px;
-  }
-   .mini-main-body {
-       background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(realback.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  overflow: hidden;
-  max-width: 100%;
-    min-height: 80dvh;
-  }
-  .about-text {
-    display: flex;
-    justify-content: center;
-    text-align: center;
   }
   .mint-rocket {
     display: none;
@@ -658,15 +654,6 @@ body {
   }
   .foot-link a {
     font-size: 14px;
-  }
-  .cover-main {
-    background: url(realback.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    max-width: 100%;
-    min-height: 170dvh;
   }
   .main-body-1 {
     background: url(realback.png);
@@ -708,11 +695,14 @@ body {
   .exit {
     right: 40px;
   }
-    .foot {
+  .foot {
     min-height: 7dvh;
   }
   .foot-text {
     position: relative;
     top: 15px;
+  }
+  .about-main {
+    padding: 0 0 20px 0;
   }
 }
