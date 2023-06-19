@@ -13,7 +13,7 @@ const hiddennn = document.querySelector(".hidden-2");
 const show2 = document.querySelector(".link-2");
 const mint = document.querySelector(".mint-main-layout");
 const overlay2 = document.querySelector(".overlay-2");
-const exit = document.querySelector(".exit-mint-page");
+const exit = document.querySelector(".exit");
 const mainMintButton = document.querySelector(".main-mint-button");
 const styleButton = document.querySelectorAll(".style-button");
 const minus = document.querySelector("#minus");
@@ -76,18 +76,13 @@ mobile.addEventListener("click", function () {
 mobileM.addEventListener("click", function () {
   drop.classList.add("hidden-3");
 });
-const closeModal2 = function () {
-  mint.classList.add("hidden-2");
-  overlay2.classList.add("hidden-2");
-};
-overlay2.addEventListener("click", closeModal2);
-show2.addEventListener("click", function () {
-  mint.classList.remove("hidden-2");
-  overlay2.classList.remove("hidden-2");
+show.addEventListener("click", function () {
+  hiddenn.classList.remove("hidden");
+  overlay.classList.remove("hidden");
 });
-exit.addEventListener("click", function () {
-  mint.classList.add("hidden-2");
-  overlay2.classList.add("hidden-2");
+eixt.addEventListener("click", function () {
+  hiddenn.classList.add("hidden");
+  overlay.classList.add("hidden");
 });
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
