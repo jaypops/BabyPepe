@@ -4,7 +4,7 @@ const header = document.querySelector(".header");
 const show = document.querySelector(".btn--show-modal");
 const hiddenn = document.querySelector(".hidden");
 const overlay = document.querySelector(".overlay");
-const wallet = document.querySelector(".wallets");
+const eixt = document.querySelector(".exit");
 const loader = document.querySelector("#preloader");
 const drop = document.querySelector(".dropdown-menu");
 const mobile = document.querySelector(".mobile-nav");
@@ -12,8 +12,6 @@ const mobileM = document.querySelector(".mobile-nav-2");
 const hiddennn = document.querySelector(".hidden-2");
 const show2 = document.querySelector(".link-2");
 const mint = document.querySelector(".mint-main-layout");
-const overlay2 = document.querySelector(".overlay-2");
-const exit = document.querySelector(".exit");
 const mainMintButton = document.querySelector(".main-mint-button");
 const styleButton = document.querySelectorAll(".style-button");
 const minus = document.querySelector("#minus");
@@ -57,19 +55,6 @@ const closeModal = function () {
   wallet.classList.add("hidden");
   overlay.classList.add("hidden");
 };
-overlay.addEventListener("click", closeModal);
-show.addEventListener("click", function () {
-  wallet.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-});
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape" && !wallet.classList.contains("hidden")) {
-    closeModal();
-  }
-});
-window.addEventListener("load", function () {
-  loader.classList.add("disappear");
-});
 mobile.addEventListener("click", function () {
   drop.classList.remove("hidden-3");
 });
