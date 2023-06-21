@@ -127,29 +127,24 @@ a {
 .main-body-1 {
   background: url(realback.png);
   max-width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   overflow: hidden;
 }
 .mainn {
+  padding: 11% 4%;
   display: flex;
-  justify-content: space-evenly;
-  position: relative;
-  top: 60px;
-  padding: 0 40px 0 40px;
-}
-.main__ {
-  padding: 0 40px;
+  justify-content: space-between;
+  align-items: center;
 }
 .main__ p {
   line-height: 1.35;
   font-size: 1.1rem;
   color: var(--color-primary-darker);
   font-family: "Overlock SC", cursive;
-  position: relative;
-  top: 15px;
+  padding: 3% 0 0 0;
 }
 .main__ h1 {
   font-size: 175px;
@@ -164,12 +159,7 @@ a {
 }
 .main_img img {
   transform: scalex(-1);
-  position: relative;
-  top: 50px;
-}
-.main__ {
-  position: relative;
-  top: 170px;
+  height: 33rem;
 }
 @keyframes back {
   100% {
@@ -177,14 +167,10 @@ a {
   }
 }
 .btn-link {
-  position: relative;
-  top: 55px;
   color: var(--color-primary);
 }
 .btn:link,
 .btn:visited {
-  position: relative;
-  top: 60px;
   text-decoration: none;
   padding: 0.9rem 5.1rem;
   border-radius: 3rem;
@@ -204,17 +190,17 @@ a {
   padding: 10px;
 }
 .btn-btn {
+  padding: 4% 0 0 0;
   transition: transform 1000ms;
-  filter: drop-shadow(30px 30px 40px #111);
 }
 .btn-btn:hover,
 .btn-btn:focus-visible {
+  filter: drop-shadow(30px 30px 40px #111);
   transform: translateY(-1.75rem);
   transition: transform 250ms;
 }
 .btn-d {
-  position: relative;
-  top: 30px;
+  padding: 3% 0 0 0;
 }
 .mini-main-body {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -224,15 +210,13 @@ a {
   background-attachment: fixed;
   overflow: hidden;
   max-width: 100%;
-  min-height: 100dvh;
+  min-height: 100%;
 }
 .about-text {
+  padding: 10% 4%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 50px;
 }
 .about-main h3 {
   display: flex;
@@ -256,11 +240,15 @@ a {
 .about-main-1 img {
   transform: scalex(-1);
   position: relative;
-  bottom: 100px;
+  top: 100px;
 }
 .about-main-0 img {
   position: relative;
-  top: 200px;
+  bottom: 200px;
+}
+.about-main-0 img,
+.about-main-1 img {
+  height: 33rem;
 }
 .swip {
   position: relative;
