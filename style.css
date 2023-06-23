@@ -16,10 +16,6 @@ html {
   font-size: 85.5%;
   box-sizing: border-box;
 }
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -253,7 +249,7 @@ a {
 .swip {
   position: relative;
   width: 100%;
-  height: 100dvh;
+  height: 100%;
   background-position: 100% 100%;
   background-size: 100% 100%;
   padding: 100px 100px;
@@ -261,8 +257,6 @@ a {
 }
 .swiper {
   width: 100%;
-  position: relative;
-  bottom: 10px;
   list-style: none;
 }
 .swiper-slide {
@@ -276,8 +270,8 @@ a {
 }
 .swiper-slide img {
   display: block;
-  max-width: 350px;
-  height: 390px;
+  max-width: 300px;
+  height: 350px;
   border-radius: 20px;
 }
 .mySwiper h1 {
@@ -408,28 +402,41 @@ a {
   .main_img img {
     display: none;
   }
+  .main-body-1 {
+    background: url(realback.png);
+    max-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
   .mainn {
-    position: relative;
-    top: -80px;
-    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .main__ h1 {
-    font-size: 65px;
+    font-size: 68px;
+    line-height: 70px;
   }
   .main__ p {
-    position: relative;
-    top: auto;
     font-size: 0.9rem;
+    padding: 4% 0 0 0;
   }
   .btn:link,
   .btn:visited {
-    position: relative;
-    top: 20px;
     font-size: 18px;
     padding: 0.6rem 3.1rem;
   }
+  .btn-btn {
+    padding: 4% 0 0 0;
+  }
+  .btn-d {
+    padding: 13% 0 0 0;
+  }
   .mini-main-body {
-    min-height: 80dvh;
+    min-height: 100%;
   }
   .about-main-0 img,
   .about-main-1 img {
@@ -442,28 +449,6 @@ a {
     display: flex;
     justify-content: center;
     text-align: center;
-  }
-  .mint-main-layout {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-mint-page {
-    padding-left: 20px;
-  }
-  .main-mint-page h1 {
-    font-size: 30px;
-  }
-  .mint-rocket {
-    display: none;
-  }
-  .time {
-    padding: 10px;
-    position: relative;
-    right: 17px;
-  }
-  .time-text h2 {
-    font-size: 20px;
   }
   .hidden-2 {
     display: none;
@@ -483,16 +468,6 @@ a {
   }
   .foot-link a {
     font-size: 14px;
-  }
-  .main-body-1 {
-    background: url(realback.png);
-    max-width: 100%;
-    min-height: 80dvh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    z-index: 1;
   }
   .foot {
     min-height: 7dvh;
@@ -519,34 +494,6 @@ a {
   }
   .ex {
     display: none;
-  }
-}
-@media screen and (min-width: 845px) and (max-width: 1000px) {
-  .nav__link {
-    font-size: 1.5rem;
-  }
-  .main_img img {
-    display: none;
-  }
-  .main__ h1 {
-    font-size: 130px;
-  }
-  .about-main-1 img,
-  .about-main-0 img {
-    display: none;
-  }
-  .about-main {
-    padding: 20px 20px 80px 20px;
-  }
-  .mini-main-body {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(realback.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    max-width: 100%;
-    min-height: 100%;
   }
 }
 @media screen and (min-width: 550px) and (max-width: 845px) {
@@ -638,6 +585,50 @@ a {
     font-size: 18px;
   }
   .main_img {
+    display: none;
+  }
+  .main__ h1 {
+    font-size: 110px;
+    line-height: 110px;
+  }
+  .btn:link,
+  .btn:visited {
+    font-size: 16px;
+    padding: 0.5rem 2.8rem;
+  }
+  .btn-btn {
+    padding: 4% 0 0 0;
+  }
+  .btn-d {
+    padding: 9% 0 0 0;
+  }
+  .btn .about-main-1 img,
+  .about-main-0 img {
+    display: none;
+  }
+  .about-main {
+    padding: 20px 20px 80px 20px;
+  }
+  .mini-main-body {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(realback.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    max-width: 100%;
+    min-height: 100%;
+  }
+  .about-main-1 img,
+  .about-main-0 img {
+    display: none;
+  }
+}
+@media screen and (min-width: 845px) and (max-width: 1000px) {
+  .nav__link {
+    font-size: 1.5rem;
+  }
+  .main_img img {
     display: none;
   }
   .main__ h1 {
